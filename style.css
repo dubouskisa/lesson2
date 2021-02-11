@@ -1499,5 +1499,17 @@ summary::-webkit-details-marker {
   .advantage:not(:last-child) {
     margin-bottom: 48px;
   }
+  .footer__center {
+    background-position: 32%;
+    display: block;
+  }
+  .footer__center-left {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__center-right {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
