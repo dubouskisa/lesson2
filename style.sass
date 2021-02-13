@@ -1,4 +1,5 @@
 $colorBackground: #F16D7F
+$colorHover: #E05C6E
 $colorText: #222222
 *
     margin: 0
@@ -123,21 +124,17 @@ summary
         line-height: 17px
         color: #000000
 
-    &__img
-        margin-left: 11px
-
-    &__category
-        padding-left: 11px
-        font-family: Lato
+    &__checkbox
+        font-family: Roboto
         font-style: normal
         font-weight: normal
         font-size: 14px
-        line-height: 17px
-        color: $colorBackground
-        height: 37px
-        line-height: 37px
-        border-left: 5px solid $colorBackground
-        margin-top: 20px
+        line-height: 16px
+        color: #6F6E6E
+        margin-top: 9px
+
+    &__choice
+        margin-right: 9px
 
 .size[open]
     width: 80px
@@ -359,7 +356,7 @@ summary
 
 .footer__top
     background: $colorText
-    height: 341px
+    min-height: 341px
     display: flex
     flex-wrap: wrap
     align-items: center
@@ -397,9 +394,10 @@ summary
 
 .footer__center
     background-image: url(img/footer_background.png)
-    height: 448px
+    min-height: 448px
     background-repeat: no-repeat
     background-position: center
+    background-size: cover
     display: flex
     justify-content: space-between
     align-items: center
@@ -491,9 +489,12 @@ summary
     &:focus
         outline: none
 
+    &:hover
+        background: $colorHover
+
 .footer__bottom
     background: $colorText
-    height: 79px
+    min-height: 79px
     display: flex
     flex-wrap: wrap
     align-items: center
@@ -940,6 +941,9 @@ summary
             line-height: 19px
             color: #FFFFFF
 
+            &:hover
+                background: $colorHover
+
 .reg
     display: flex
     justify-content: space-between
@@ -1003,6 +1007,9 @@ summary
         line-height: 17px
         color: #FFFFFF
 
+        &:hover
+            background: $colorHover
+
     &__text
         width: 660px
         font-family: Lato
@@ -1019,3 +1026,5 @@ summary
             margin-bottom: 16px
 
 @import 'm768'
+
+@import 'm375'
