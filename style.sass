@@ -48,14 +48,14 @@ summary
         display: none
 
 .sort-box
-    padding-top: 51px
+    padding-top: 64px
     padding-bottom: 64px
 
     &__filter
         position: relative
 
 .filter
-    padding: 13px 16px 16px
+    padding: 0 16px 16px
     position: absolute
     z-index: 1
 
@@ -109,12 +109,20 @@ summary
     background: #FFFFFF
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
 
-.size
-    padding-top: 13px
+.sort
     padding-bottom: 16px
-    margin-left: 300px
+    position: relative
+    margin-left: 390px
+
+.size
     position: absolute
     z-index: 1
+
+    &__size
+        margin-left: 150px
+
+    &__price
+        margin-left: 225px
 
     &__name
         font-family: Lato
@@ -137,7 +145,7 @@ summary
         margin-right: 9px
 
 .size[open]
-    width: 80px
+    min-width: 80px
     box-sizing: border-box
     background: #FFFFFF
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
@@ -243,15 +251,15 @@ summary
         color: $colorText
         text-align: center
 
-.produc-box__text
-    font-family: Lato
-    font-style: normal
-    font-weight: normal
-    font-size: 14px
-    line-height: 17px
-    color: #9F9F9F
-    text-align: center
-    margin-top: 6px
+    .__text
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #9F9F9F
+        text-align: center
+        margin-top: 6px
 
 .product
     width: 360px
@@ -265,7 +273,6 @@ summary
         transform: scale(1.05)
 
     &-box__content
-        padding-top: 48px
         display: flex
         flex-wrap: wrap
         justify-content: space-between
